@@ -1,0 +1,4 @@
+    recipes = Recipe.objects.filter(
+    category__id=2,
+    is_published = True,
+).order_by('-id')
