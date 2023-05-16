@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@900&display=swap');
+        
         :root {
             --color-primary: #269fe6;
             --color-primary-hover: #2086c2;
@@ -73,6 +75,9 @@
             margin: 0 auto;
             padding: var(--spacing-gutter-medium)
         }
+
+        
+        
 
         .main-header-container {
             background: var(--color-primary-dark);
@@ -257,4 +262,8 @@
 
         .main-footer a:hover {
             filter: brightness(.8);
+        }
+
+        .center{
+            text-align: center;
         }
