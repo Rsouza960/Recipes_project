@@ -22,4 +22,11 @@ class RecipeURLsTest(TestCase):  # noqa: E303
         self.assertEqual(url, '/recipes/search/')
 
 
+
+    def test_recipe_search_raises_404_if_no_search_term(self):
+        url = reverse('recipes:search')
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 404)
+
+
 # RED - GREEN - REFACTOR
